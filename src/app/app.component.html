@@ -1,0 +1,16 @@
+<h1>Hi there {{name}}</h1>
+<div [style.color]="vaibhavscolor">
+    HEllo {{title}}
+</div>
+<input type="text" [value]="title" (keyup.enter)="title=$event.target.value"/>
+<!--<input type="text" [(ngModel)]="title"/>-->
+<button (click)="changeVaibhavsColor()">Change suit color</button>
+<br/>
+<ul>
+  <li *ngFor="let u of user">
+  <app-login [User]="u"></app-login>
+  </li>
+</ul>
+<!-- <div *ngFor="let u of user">
+<my-login [user]=u></my-login>
+</div> -->
